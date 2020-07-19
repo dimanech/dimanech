@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+	max-width: 40em;
+	font-family: Consolas, "SF Mono", 'DejaVu Sans Mono', monospace;
+}
+
+*:focus {
+	outline: 3px solid #fd3283;
+}
+
+h1 {
+	border-bottom: 1px solid #888;
+}
+
+img {
+	display: block;
+	border-radius: 100px;
+	border: 1px solid #888;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+img::before {
+	content: attr(alt);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 2;
+	background-color: red;
+	display: flex;
+	align-items: center;
+}
+
+ul {
+	padding-left: 14px;
+}
+
+.card {
+	display: flex;
+}
+
+.card__media {
+	padding-right: 20px;
+}
+
+footer {
+	border-top: 1px solid #888;
+	padding-top: 1em;
+}
