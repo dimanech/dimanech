@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+	--divider: #000;
+}
+
 body {
 	max-width: 40em;
 	font-family: Consolas, "SF Mono", 'DejaVu Sans Mono', monospace;
@@ -10,14 +14,13 @@ body {
 }
 
 h1 {
-	border-bottom: 1px solid #888;
+	border-bottom: 1px solid var(--divider);
+	margin-bottom: 1rem;
 }
 
 img {
 	display: block;
-	border-radius: 100px;
-	border: 1px solid #888;
-	background-color: #eee;
+	background-color: #fff;
 	position: relative;
 	overflow: hidden;
 	font-size: 12px;
@@ -32,9 +35,13 @@ img::before {
 	bottom: 0;
 	text-align: center;
 	z-index: 2;
-	background-color: red;
+	background-color: grey;
 	display: flex;
 	align-items: center;
+}
+
+p:first-of-type {
+	margin-top: 0;
 }
 
 ul {
@@ -50,6 +57,6 @@ ul {
 }
 
 footer {
-	border-top: 1px solid #888;
+	border-top: 1px solid var(--divider);
 	padding-top: 1em;
 }
