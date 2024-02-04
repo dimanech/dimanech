@@ -5,8 +5,9 @@
 }
 
 body {
-	max-width: 40em;
+	background: white;
 	font-family: Consolas, "SF Mono", 'DejaVu Sans Mono', monospace;
+	max-width: 40em;
 }
 
 *:focus {
@@ -35,7 +36,7 @@ img::before {
 	bottom: 0;
 	text-align: center;
 	z-index: 2;
-	background-color: grey;
+	background-color: white;
 	display: flex;
 	align-items: center;
 }
